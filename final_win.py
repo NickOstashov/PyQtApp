@@ -28,8 +28,8 @@ class FinalWin(QWidget):
 
     def initUI(self):
         ''' создаёт графические элементы '''
-        self.workh_text = QLabel(txt_workheart)
-        self.index_text = QLabel(txt_index)
+        self.workh_text = QLabel(txt_workheart + self.result())
+        self.index_text = QLabel(txt_index + str(self.index))
 
 
         self.layout_line = QVBoxLayout()
