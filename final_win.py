@@ -52,3 +52,11 @@ class FinalWin(QWidget):
         if self.exp.age  == 7 or self.exp.age ==8: 
             if self.index >= 21:
                 return txt_res1
+            elif self.index < 21 and self.index >= 17:
+                return txt_res2
+            elif self.index < 17 and self.index >= 12:
+                return txt_res3 
+            elif self.index < 12 and self.index >= 6.5:
+                return txt_res4
+            else:
+                return txt_res5
